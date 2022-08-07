@@ -136,20 +136,20 @@ theAll.onclick = allTasksHere;
 // complete and uncompleted
 function manageCompleteTasks() {
   console.log(arrayOfTasks);
-  arrayOfTasks = arrayOfTasks.filter(task => task.completed == true );
-  addElmentsToPage(arrayOfTasks);
+  let completedTasks = arrayOfTasks.filter(task => task.completed == true );
+  addElmentsToPage(completedTasks);
   console.log(arrayOfTasks);
 }
 function manageNotCompleteTasks() {
   console.log(arrayOfTasks);
-  arrayOfTasks = arrayOfTasks.filter(task => task.completed == false );
-  addElmentsToPage(arrayOfTasks);
+  let NotCompletedTask = arrayOfTasks.filter(task => task.completed == false );
+  addElmentsToPage(NotCompletedTask);
   console.log(arrayOfTasks);
 }
 function allTasksHere() {
-  console.log(arrayOfTasks);
+  let allTasksShow = arrayOfTasks;
+  addElmentsToPage(allTasksShow);
 }
-
 // old code  >>--------------------
 /*
 else {
